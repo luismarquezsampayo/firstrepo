@@ -1,0 +1,10 @@
+[http]
+	proxy = http://DESKTOP-3BFBOIS:8080
+[user]
+	name = Luis Marquez
+	email = luis.marquez@gmail.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
